@@ -195,7 +195,7 @@ int makeMove(char board[][MAX_SIZE], int size, int row, int col, char player){
             int stepR = row + dRow[dir];
             int stepC = col + dCol[dir];
                 while (stepR != r || stepC != c) {
-                  board[stepR][stepC] = player; // Taşı çevir
+                  board[stepR][stepC] = player; 
                   totalFlipped++;
                   stepR += dRow[dir];
                   stepC += dCol[dir];
@@ -294,7 +294,7 @@ int getBoardSize() {
             }
             std::cout << "Invalid size! You must enter 8, 10, or 12.\n";
         } else {
-            // Sayı yerine harf vb. girilirse akışı temizle
+            
             std::cin.clear();
             std::string dummy;
             std::cin >> dummy;
